@@ -1,0 +1,97 @@
+// Imports
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button {
+  font-family: "Lato", $font-family-sans-serif;
+}
+
+.navbar-scrolled {
+  background: #ffffff;
+  border-bottom: solid 1px #e8e8e8;
+}
+
+.nav-link-scrolled {
+  color: #4da7e1 !important;
+}
+
+.nav-brand-scrolled {
+  color: #4da7e1 !important;
+}
+
+.navbar {
+  transition: background-color 0.2s ease-out;
+  .navbar-brand {
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: rgba(134, 134, 134, 0.8);
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: rgba(134, 134, 134, 0.8);
+        font-weight: 300;
+        text-transform: uppercase;
+        &:hover {
+          color: #1ac6ff;
+        }
+      }
+    }
+  }
+
+  .navbar-collapse {
+    &.show {
+      .navbar-nav {
+        background: #ffffff;
+        .nav-link {
+          color: #1ac6ff;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.75);
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(77,167,225, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+.hero {
+  min-height: 650px;
+  background-size: cover;
+  padding-top: 170px;
+  padding-bottom: 50px;
+
+  h1 {
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    font-size: 55px;
+
+    span {
+      color: #4da7e1;
+    }
+  }
+  p.lead {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+  }
+}
