@@ -1,5 +1,7 @@
 // JS
+// eslint-disable-next-line no-unused-vars
 import $ from "jquery";
+// eslint-disable-next-line no-unused-vars
 import popper from "popper.js";
 import "bootstrap";
 import "./scroll";
@@ -13,7 +15,7 @@ window.onscroll = () => {
   const navBrand = document.querySelector(".navbar-brand");
   const navHeight = nav.offsetHeight;
   const navItems = document.querySelectorAll("nav a.nav-link");
-  if (navHeight <= pageYOffset) {
+  if (navHeight <= window.pageYOffset) {
     nav.classList.add("navbar-scrolled");
     navItems.forEach(element => element.classList.add("nav-link-scrolled"));
     navBrand.classList.add("nav-brand-scrolled");
