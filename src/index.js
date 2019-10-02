@@ -4,7 +4,6 @@ import $ from "jquery";
 // eslint-disable-next-line no-unused-vars
 import popper from "popper.js";
 import "bootstrap";
-import "./scroll";
 
 // Styles
 import "./styles/index.scss";
